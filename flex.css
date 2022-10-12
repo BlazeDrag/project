@@ -1,0 +1,54 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    /* display: flex; */
+    background-color: black;
+    /* flex-wrap: wrap; */
+    color: white;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    height: 10vh;
+    font-size: 30px;
+    /* padding: 15px; */
+    
+}
+.box{
+   margin: 15px;
+   float: right;
+}
+.box:hover{
+    background-color: grey;
+}
+.com{
+    text-align: center;
+    /* display: block; */
+    height: 100vh;
+    width: 100vw;
+   
+    /* align-self: center; */
+}
+img{
+    height: 30vh;
+    width: 30vw; 
+    animation-name: rotat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotat {
+    0%{
+        /* transform-origin: 0; */
+        transform: translateY(0px);
+        /* transform: rotate(360deg); */
+    }
+    50%{
+        /* transform-origin: ; */
+        transform: translateY(60vh);   
+    }
+    100%{
+        transform: translateY(-0.1vh);
+    }
+    
+}
